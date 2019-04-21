@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
 border()
 {
     local title="| $1 |"
@@ -34,7 +39,8 @@ grep -q '/usr/bin/Sound.sh' /etc/rc.local || sed -i '\|^#!/bin/.*sh|a\/usr/bin/S
 chmod +x /etc/rc.local
 #systemctl enable rc-local || systemctl enable rc.local
 
-border 'Rebooting System'
+border 'Activating new settings'
+sysctl net.core.rmem_max=16777216 net.core.wmem_max=16777216
+/usr/bin/Sound.sh
 
-
-reboot
+border 'Please reboot the system'
