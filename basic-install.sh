@@ -9,13 +9,13 @@ border()
 }
 
 border 'Downloading Sound File'
- 
-wget https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/Sound.$
+
+wget https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/Sound.sh -O /usr/bin/Sound.sh
 chmod 755 /usr/bin/Sound.sh
 
 border 'Increasing Sound Group Priority'
 
-[[ -f /etc/security/limits.conf ]] && mv /etc/security/limits.conf /etc/s$
+[[ -f /etc/security/limits.conf ]] && mv /etc/security/limits.conf /etc/security/limits.conf.bak
 echo '#New Limits' > /etc/security/limits.conf
 echo '@audio - rtprio 99' >> /etc/security/limits.conf
 echo '@audio - memlock 512000' >> /etc/security/limits.conf
@@ -30,10 +30,11 @@ echo 'net.core.wmem_max = 16777216' >> /etc/sysctl.d/network-latency.conf
 border 'Creating System Service'
 
 [[ -f /etc/rc.local ]] || echo -e '#/bin/bash\n\nexit 0' > /etc/rc.local
-grep -q '/usr/bin/Sound.sh' /etc/rc.local || sed -i '\|^#!/bin/.*sh|a\/us$
+grep -q '/usr/bin/Sound.sh' /etc/rc.local || sed -i '\|^#!/bin/.*sh|a\/usr/bin/Sound.sh' /etc/rc.local
 chmod +x /etc/rc.local
 #systemctl enable rc-local || systemctl enable rc.local
 
 border 'Rebooting System'
+
 
 reboot
