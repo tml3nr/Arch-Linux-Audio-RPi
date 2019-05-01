@@ -11,6 +11,8 @@ Debian Based RPi tweaks for improved sound. For TinyCore based systems see [Tiny
  1) nano file editor; apt install nano
  2) Or the ability to use vi editor, your choice.
  
+ *Note: System will reboot after install and removal*
+ 
 **Should work on any SBC running Debian based OS, has been tested on:**
 
 - Raspberry Pi (v1) model B
