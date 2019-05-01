@@ -27,9 +27,6 @@ echo "#New Network Latency" > /etc/sysctl.d/network-latency.conf
 echo 'net.core.rmem_max = 16777216' >> /etc/sysctl.d/network-latency.conf
 echo 'net.core.wmem_max = 16777216' >> /etc/sysctl.d/network-latency.conf
 
-border 'Reducing USB latency'
-
-modprobe snd-usb-audio nrpacks=1
 
 border 'Creating System Service'
 
