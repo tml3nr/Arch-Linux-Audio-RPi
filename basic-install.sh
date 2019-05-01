@@ -27,6 +27,10 @@ echo "#New Network Latency" > /etc/sysctl.d/network-latency.conf
 echo 'net.core.rmem_max = 16777216' >> /etc/sysctl.d/network-latency.conf
 echo 'net.core.wmem_max = 16777216' >> /etc/sysctl.d/network-latency.conf
 
+border 'Reducing USB latency'
+
+modprobe snd-usb-audio nrpacks=1
+
 border 'Creating System Service'
 
 [[ -f /etc/rc.local ]] || echo -e '#/bin/bash\n\nexit 0' > /etc/rc.local
@@ -34,7 +38,7 @@ grep -q '/usr/bin/Sound.sh' /etc/rc.local || sed -i '\|^#!/bin/.*sh|a\/usr/bin/S
 chmod +x /etc/rc.local
 #systemctl enable rc-local || systemctl enable rc.local
 
-border 'Rebooting System'
+border 'Rebooting System Enjoy the Music'
 
 
 reboot
