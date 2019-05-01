@@ -11,9 +11,6 @@ chrt -f -p 54 $(pgrep ksoftirqd/3)
 #chrt -f -p 81 $(pidof mpd)
 #taskset -c -p 1 $(pidof mpd)
 
-#USB Dacs Uncomment to reduce USB latency
-#modprobe snd-usb-audio nrpacks=1
-
 #SPDIF HAT and WiFi users Uncomment to turn off power to [Ethernet and USB] ports
 #echo 0x0 > /sys/devices/platform/soc/3f980000.usb/buspower
 
