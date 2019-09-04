@@ -1,4 +1,4 @@
-# Arch Linux-Audio
+# Arch Linux-Audio Sound Tweaks
 Arch Linux Based RPi tweaks for improved sound. 
 - For TinyCore Linux based systems see [TinyCore Sound Tweaks](https://github.com/dynobot/TinyCore-Sound-Adjustments)
 - For Debian Linux base systems see [Debian Sound Tweaks](https://github.com/dynobot/Linux-Audio-Adjustments)
