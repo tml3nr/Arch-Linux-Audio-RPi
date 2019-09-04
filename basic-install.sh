@@ -40,6 +40,6 @@ systemctl enable sound.service
 #systemctl enable rc-local || systemctl enable rc.local
 
 border 'Rebooting System Enjoy the Music'
-sleep 1
+sleep 3
 
 reboot
