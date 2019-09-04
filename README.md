@@ -22,7 +22,7 @@ Arch Linux Based RPi tweaks for improved sound.
 
  ______________________________________________________________________________________________________________________________
  ## Automated Install
- - wget https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/basic-install.sh
+ - wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/master/basic-install.sh
  - chmod 755 basic-install.sh
  - sudo ./basic-install.sh
  
