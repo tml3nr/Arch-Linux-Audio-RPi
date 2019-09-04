@@ -27,7 +27,7 @@ Arch Linux Based RPi tweaks for improved sound.
  - sudo ./basic-install.sh
  
  ## Automated Removal
- - wget https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/remove.sh
+ - wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/master/remove.sh
  - chmod 755 remove.sh
  - sudo ./remove.sh
  
