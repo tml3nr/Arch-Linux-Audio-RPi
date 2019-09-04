@@ -13,7 +13,7 @@ border 'Removing Linux Audio Tuning'
 [[ -f /usr/bin/Sound.sh ]] && rm /usr/bin/Sound.sh
 [[ -f /etc/sysctl.d/network-latency.conf ]] && rm /etc/sysctl.d/network-latency.conf
 [[ -f /etc/security/limits.conf.bak ]] && mv /etc/security/limits.conf.bak /etc/security/limits.conf
-[[ -f /etc/rc.local ]] && sed -i '\|/usr/bin/Sound.sh|d' /etc/rc.local
+[[ -f /etc/systemd/system/sound.service ]] && rm /etc/systemd/system/sound.service
 
 sudo rm basic-install.sh
 
