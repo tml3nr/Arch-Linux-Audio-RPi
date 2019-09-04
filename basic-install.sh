@@ -10,7 +10,7 @@ border()
 
 border 'Downloading Sound File'
 
-wget https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/Sound.sh -O /usr/bin/Sound.sh
+wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/master/Sound.sh -O /usr/bin/Sound.sh
 chmod 755 /usr/bin/Sound.sh
 
 border 'Increasing Sound Group Priority'
