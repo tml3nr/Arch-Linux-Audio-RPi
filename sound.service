@@ -2,7 +2,7 @@
 Description=Sound
 
 [Service]
-ExecStart=/usr/bin/Sound.sh
+ExecStart=/bin/bash /usr/bin/Sound.sh
 
 [Install]
 WantedBy=multi-user.target
