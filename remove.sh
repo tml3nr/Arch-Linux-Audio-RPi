@@ -4,7 +4,7 @@ border()
 {
     local title="| $1 |"
     local edge=${title//?/-}
-    echo -e "${edge}\n${title}\n${edge}"
+    echo -e "${edge}\e[34m\n${title}\n${edge}"
     sleep 4
 }
 
@@ -18,5 +18,5 @@ border 'Removing Linux Audio Tuning'
 rm basic-install.sh
 
 border 'Rebooting System'
-
+sleep 1
 reboot
