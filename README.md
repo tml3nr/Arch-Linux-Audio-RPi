@@ -1,5 +1,6 @@
-# Linux-Audio
-Debian Based RPi tweaks for improved sound. For TinyCore Linux based systems see [TinyCore Sound Tweaks](https://github.com/dynobot/TinyCore-Sound-Adjustments)
+# Arch Linux-Audio
+Arch Linux Based RPi tweaks for improved sound. 
+For TinyCore Linux based systems see [TinyCore Sound Tweaks](https://github.com/dynobot/TinyCore-Sound-Adjustments)
  
  To improve the sound of the Raspberry Pi using Debian and other distributions of Linux several parameters can be adjusted.
  1) Improving the priority of the Audio group
@@ -8,19 +9,17 @@ Debian Based RPi tweaks for improved sound. For TinyCore Linux based systems see
  4) Improve network latency
  ______________________________________________________________________________________________________________________________
  ## Prerequisites 
- 1) nano file editor; apt install nano
+ 1) nano file editor; pacman -S nano
  2) Or the ability to use vi editor, your choice.
  
  *Note: System will reboot after install and removal*
  
-**Should work on any SBC running Debian based OS, has been tested on:**
+**Should work on any SBC running Arch Linux based OS, has been tested on:**
 
 - Raspberry Pi (v1) model B
 - Raspberry Pi 2 model B
 - Raspberry Pi 3 model B and B+
-- Allo Sparky
-- ASUS Tinkerboard
-- Odroid C2
+
  ______________________________________________________________________________________________________________________________
  ## Automated Install
  - wget https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/basic-install.sh
