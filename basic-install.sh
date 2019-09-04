@@ -4,7 +4,7 @@ border()
 {
     local title="| $1 |"
     local edge=${title//?/-}
-    echo -e "${edge}\e[1m\e[34m\n${title}\n${edge}"
+    echo -e "${edge}\e[34m\n${title}\n${edge}"
     sleep 3
 }
 
