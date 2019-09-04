@@ -30,9 +30,13 @@ echo 'net.core.wmem_max = 16777216' >> /etc/sysctl.d/network-latency.conf
 
 border 'Creating System Service'
 
-[[ -f /etc/rc.local ]] || echo -e '#/bin/bash\n\nexit 0' > /etc/rc.local
-grep -q '/usr/bin/Sound.sh' /etc/rc.local || sed -i '\|^#!/bin/.*sh|a\/usr/bin/Sound.sh' /etc/rc.local
-chmod +x /etc/rc.local
+wget https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/Sound.sh -O /etc/systemd/system/sound.service
+systemctl start sound.service
+systemctl enable sound.service
+
+#[[ -f /etc/rc.local ]] || echo -e '#/bin/bash\n\nexit 0' > /etc/rc.local
+#grep -q '/usr/bin/Sound.sh' /etc/rc.local || sed -i '\|^#!/bin/.*sh|a\/usr/bin/Sound.sh' /etc/rc.local
+#chmod +x /etc/rc.local
 #systemctl enable rc-local || systemctl enable rc.local
 
 border 'Rebooting System Enjoy the Music'
