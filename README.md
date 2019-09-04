@@ -10,8 +10,7 @@ Arch Linux Based RPi tweaks for improved sound.
  4) Improve network latency
  ______________________________________________________________________________________________________________________________
  ## Prerequisites 
- 1) nano file editor; pacman -S nano
- 2) Or the ability to use vi editor, your choice.
+ 1) The ability to ssh into your Raspberrypi - see our OS documentation for details.
  
  *Note: System will reboot after install and removal*
  
