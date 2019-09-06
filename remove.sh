@@ -19,4 +19,5 @@ rm basic-install.sh
 
 border 'Rebooting System'
 sleep 1
+rm remove.sh
 reboot
