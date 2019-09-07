@@ -1,0 +1,18 @@
+# See /boot/overlays/README for all available options
+#gpu_mem=64
+initramfs initramfs-linux.img followkernel
+boot_delay=5
+max_usb_current=1
+dtparam=eee=off
+dtparam=eth_max_speed=100
+dtparam=eth_led0=4
+dtparam=audio=off
+arm_freq=800
+sdram_freq=400
+core_freq=400
+gpu_freq=300
+over_voltage=-4
+over_voltage_sdram=-4
+gpu_mem=16
+dtoverlay=i2s-mmap
+dtoverlay=allo-digione
