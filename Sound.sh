@@ -2,10 +2,10 @@
 #!/bin/bash
 
 #Reduce Audio thread latency
-chrt -f -p 74 $(pgrep ksoftirqd/0)
-chrt -f -p 74 $(pgrep ksoftirqd/1)
-chrt -f -p 74 $(pgrep ksoftirqd/2)
-chrt -f -p 74 $(pgrep ksoftirqd/3)
+chrt -f -p 63 $(pgrep ksoftirqd/0)
+chrt -f -p 63 $(pgrep ksoftirqd/1)
+chrt -f -p 63 $(pgrep ksoftirqd/2)
+chrt -f -p 63 $(pgrep ksoftirqd/3)
 
 #Uncomment for MPD Affinity and Priority
 #chrt -f -p 81 $(pidof mpd)
