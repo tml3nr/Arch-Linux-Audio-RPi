@@ -21,10 +21,10 @@ echo '@audio - rtprio 99' >> /etc/security/limits.conf
 echo '@audio - memlock 512000' >> /etc/security/limits.conf
 echo '@audio - nice -20' >> /etc/security/limits.conf
 
-border 'Improving power settings'
+border 'Improving Power Settings'
 sleep 1
 mv /boot/config.txt /boot/config.txt.bak
-w
+wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/config.txt -O /boot/config.txt
 
 border 'Improving Network Latency'
 sleep 1
