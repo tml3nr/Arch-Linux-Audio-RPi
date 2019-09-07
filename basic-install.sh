@@ -44,7 +44,8 @@ systemctl enable sound.service
 #mv spotifyd /usr/bin/spotifyd
 #cd /usr/bin && ./spotifyd
 #wget https://github.com/Spotifyd/spotifyd/raw/master/contrib/spotifyd.service -O /etc/systemd/system/spotifyd.service
-#mkdir ~/.config/spotifyd
+#mkdir ~/.config/
+#cd ~/.config && mkdir spotifyd && cd
 #wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/spotifyd.conf -O ~/.config/spotifyd/spotifyd.conf
 #systemctl start spotifyd.service
 #systemctl enable spotifyd.service
