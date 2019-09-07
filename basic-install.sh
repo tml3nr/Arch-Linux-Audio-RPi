@@ -32,12 +32,10 @@ echo "#New Network Latency" > /etc/sysctl.d/network-latency.conf
 echo 'net.core.rmem_max = 16777216' >> /etc/sysctl.d/network-latency.conf
 echo 'net.core.wmem_max = 16777216' >> /etc/sysctl.d/network-latency.conf
 
-
 border 'Creating System Service'
 sleep 1
 wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/master/sound.service -O /etc/systemd/system/sound.service
 systemctl enable sound.service
-
 
 border 'Rebooting System Enjoy the Music'
 sleep 3
