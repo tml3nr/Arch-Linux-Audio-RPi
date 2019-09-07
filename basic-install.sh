@@ -21,6 +21,11 @@ echo '@audio - rtprio 99' >> /etc/security/limits.conf
 echo '@audio - memlock 512000' >> /etc/security/limits.conf
 echo '@audio - nice -20' >> /etc/security/limits.conf
 
+border 'Improving power settings'
+sleep 1
+mv /boot/config.txt /boot/config.txt.bak
+w
+
 border 'Improving Network Latency'
 sleep 1
 echo "#New Network Latency" > /etc/sysctl.d/network-latency.conf
