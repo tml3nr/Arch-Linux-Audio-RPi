@@ -14,9 +14,11 @@ border 'Removing Linux Audio Tuning'
 [[ -f /etc/sysctl.d/network-latency.conf ]] && rm /etc/sysctl.d/network-latency.conf
 [[ -f /etc/security/limits.conf.bak ]] && mv /etc/security/limits.conf.bak /etc/security/limits.conf
 [[ -f /etc/systemd/system/sound.service ]] && rm /etc/systemd/system/sound.service
+[[ -f /boot/config.txt ]] && rm /boot/config.txt
+[[ -f /boot/config.txt.bak ]] && mv /boot/config.txt.bak /boot/config.txt
 
-rm basic-install.sh
 
-border 'Rebooting System'
+border 'Cleaning up & Rebooting System'
 sleep 1
+rm remove.sh
 reboot
