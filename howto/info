@@ -1,1 +1,31 @@
-## Updating the spotify.conf file ##
+Updating the spotifyd.conf file takes only a few easy steps
+
+1) go the the spotifyd.conf file   cd ~/.config/spotifyd
+
+2) find your output device   aplay -L
+
+Sample result:
+
+[root@havana ~]# aplay -L
+
+null
+Discard all samples (playback) or generate zero samples (capture)
+sysdefault:CARD=U20F1 <------USE THIS LINE
+USB Audio 2.0(F1), USB Audio
+Default Audio Device
+front:CARD=U20F1,DEV=0
+USB Audio 2.0(F1), USB Audio
+
+3) open spotifyd.conf file  nano spotifyd.conf
+
+BEFORE
+
+
+4) use the 4-way arrows and backspace to find/replace the default with your information
+
+AFTER
+
+
+5) afterward select ctrl + X to exit, then y to accept and enter....then type reboot
+
+Done
