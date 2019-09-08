@@ -21,7 +21,7 @@ Arch Linux Based RPi tweaks for improved sound.
 - Raspberry Pi 3 model B and B+
 
 ## Spotify Connect Install - Ropieee Only
-- 7zip must be installed first: pacman -S p7zip
+- 7zip must be installed first: `pacman -S p7zip`
 
 Once the install finished go to:
 cd ~/.config/spotifyd
