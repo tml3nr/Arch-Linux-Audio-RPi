@@ -29,7 +29,7 @@ Once the install finishes update spotifyd.conf file with your Spotify credential
 
 `cd ~/.config/spotifyd` then `nano spotifyd.config`
 
-*detailed instructions here : [Instructions](https://sites.google.com/view/dynobotscomputeraudio/do-it-yourself/update-spotifyd-conf)
+*detailed instructions here* : [Instructions](https://sites.google.com/view/dynobotscomputeraudio/do-it-yourself/update-spotifyd-conf)
 
  ______________________________________________________________________________________________________________________________
  ## Automated Install
