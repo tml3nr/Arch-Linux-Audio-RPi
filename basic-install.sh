@@ -10,7 +10,7 @@ border()
 
 border 'Downloading Sound File'
 sleep 1
-wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/master/Sound.sh -O /usr/bin/Sound.sh
+wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/Sound.sh -O /usr/bin/Sound.sh
 chmod 755 /usr/bin/Sound.sh
 
 border 'Increasing Sound Group Priority'
@@ -34,7 +34,7 @@ echo 'net.core.wmem_max = 16777216' >> /etc/sysctl.d/network-latency.conf
 
 border 'Creating System Service'
 sleep 1
-wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/master/sound.service -O /etc/systemd/system/sound.service
+wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/sound.service -O /etc/systemd/system/sound.service
 systemctl enable sound.service
 
 border 'Installing Spotify Client'
