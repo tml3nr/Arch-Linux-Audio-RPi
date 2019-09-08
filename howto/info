@@ -18,13 +18,7 @@ USB Audio 2.0(F1), USB Audio
 
 3) open spotifyd.conf file  nano spotifyd.conf
 
-BEFORE
-
-
 4) use the 4-way arrows and backspace to find/replace the default with your information
-
-AFTER
-
 
 5) afterward select ctrl + X to exit, then y to accept and enter....then type reboot
 
