@@ -20,13 +20,6 @@ Arch Linux Based RPi tweaks for improved sound.
 - Raspberry Pi 2 model B
 - Raspberry Pi 3 model B and B+
 
-## Optional Spotify Connect Install - Ropieee Only
-To install Spotify connect 7zip must be installed first.
-
-pacman -S p7zip
-
-
-
  ______________________________________________________________________________________________________________________________
  ## Automated Install
  - wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/master/basic-install.sh
