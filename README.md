@@ -9,7 +9,7 @@ Arch Linux Based RPi tweaks for improved sound.
  3) Improving the latency of the Operating System with Kernel adjustments
  4) Improve network latency
  ______________________________________________________________________________________________________________________________
- ## Prerequisites 
+ ### Prerequisites 
  1) The ability to ssh into your Raspberrypi - see your OS documentation for details.
  
  *Note: System will reboot after install and removal*
@@ -21,9 +21,12 @@ Arch Linux Based RPi tweaks for improved sound.
 - Raspberry Pi 3 model B and B+
 
 ## Spotify Connect Install - Ropieee Only
-- 7zip must be installed first: `pacman -S p7zip`
+### Prerequisites 
+ 1) The ability to use nano text editor - see nano documentation for details.
+ 2) 7zip must be installed first: `pacman -S p7zip`
 
-Once the install finished update spotifyd.conf file with your Spotify credentials.
+Once the install finished update spotifyd.conf file with your Spotify credentials, then reboot.
+
 `cd ~/.config/spotifyd` then `nano spotifyd.config`
 
  ______________________________________________________________________________________________________________________________
