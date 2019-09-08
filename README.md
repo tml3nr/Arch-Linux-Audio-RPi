@@ -23,8 +23,8 @@ Arch Linux Based RPi tweaks for improved sound.
 ## Spotify Connect Install - Ropieee Only
 - 7zip must be installed first: `pacman -S p7zip`
 
-Once the install finished update spotifyd.conf file;
-`cd ~/.config/spotifyd` then `nano spotifyd.config` Update the file with your Spotify credentials.
+Once the install finished update spotifyd.conf file with your Spotify credentials.
+`cd ~/.config/spotifyd` then `nano spotifyd.config` 
 - Before
 
 
