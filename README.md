@@ -25,8 +25,6 @@ Arch Linux Based RPi tweaks for improved sound.
 
 Once the install finished update spotifyd.conf file with your Spotify credentials.
 `cd ~/.config/spotifyd` then `nano spotifyd.config`
-Before | After
------- | -----
 
  ______________________________________________________________________________________________________________________________
  ## Automated Install
