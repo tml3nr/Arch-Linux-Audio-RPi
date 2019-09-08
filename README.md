@@ -32,6 +32,7 @@ Once the install finishes update spotifyd.conf file with your Spotify credential
  ______________________________________________________________________________________________________________________________
  ## Automated Install
  `wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/basic-install.sh`
+ 
  `chmod 755 basic-install.sh`
  
  `./basic-install.sh`
