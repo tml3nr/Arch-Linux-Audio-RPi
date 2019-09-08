@@ -50,8 +50,11 @@ wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/spotifyd.conf -O ~
 systemctl start spotifyd.service
 systemctl enable spotifyd.service
 
-border 'Installation Finished - please update spotifyd.conf with your credentials and reboot'
+border 'Installation Finished'
+border 'Please update spotifyd.conf with your credentials and reboot'
 sleep1
+exit 0
+
 #border 'Cleaning Up & Rebooting System Enjoy the Music'
 #sleep 3
 #rm basic-install.sh
