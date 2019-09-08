@@ -24,11 +24,7 @@ Arch Linux Based RPi tweaks for improved sound.
 - 7zip must be installed first: `pacman -S p7zip`
 
 Once the install finished go to:
-cd ~/.config/spotifyd
-then
-nano spotifyd.config
-
-Update the file with your Spotify credentials.
+`cd ~/.config/spotifyd` then `nano spotifyd.config` Update the file with your Spotify credentials.
 Before
 
 
