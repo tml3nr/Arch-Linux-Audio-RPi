@@ -25,9 +25,8 @@ Arch Linux Based RPi tweaks for improved sound.
 
 Once the install finished update spotifyd.conf file with your Spotify credentials.
 `cd ~/.config/spotifyd` then `nano spotifyd.config` 
-- Before
 ![before]
-https://github.com/dynobot/Arch-Linux-Audio-RPi/blob/beta/images/Screenshot%202019-09-07%20at%209.05.07%20PM.png
+(https://github.com/dynobot/Arch-Linux-Audio-RPi/blob/beta/images/Screenshot%202019-09-07%20at%209.05.07%20PM.png)
 
 - After
 
