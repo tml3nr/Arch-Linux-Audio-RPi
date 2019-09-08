@@ -25,7 +25,7 @@ Arch Linux Based RPi tweaks for improved sound.
  1) The ability to use nano text editor - see nano documentation for details.
  2) 7zip must be installed first: `pacman -S p7zip`
 
-Once the install finished update spotifyd.conf file with your Spotify credentials, then reboot.
+Once the install finishes update spotifyd.conf file with your Spotify credentials, then reboot.
 
 `cd ~/.config/spotifyd` then `nano spotifyd.config`
 
