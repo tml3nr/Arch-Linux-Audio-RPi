@@ -55,7 +55,8 @@ border 'Please update spotifyd.conf with your credentials and reboot'
 sleep1
 exit 0
 
-#border 'Cleaning Up & Rebooting System Enjoy the Music'
-#sleep 3
-#rm basic-install.sh
+border 'Cleaning Up & Rebooting System Enjoy the Music'
+sleep 3
+rm basic-install.sh
+border 'Please update spotifyd.conf file located at ~/.config/spotifyd/ then reboot'
 #reboot
