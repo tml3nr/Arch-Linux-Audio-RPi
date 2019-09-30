@@ -15,7 +15,7 @@ border 'Removing Linux Audio Tuning'
 [[ -f /etc/security/limits.conf.bak ]] && mv /etc/security/limits.conf.bak /etc/security/limits.conf
 [[ -f /etc/systemd/system/sound.service ]] && rm /etc/systemd/system/sound.service
 
-rm basic-install.sh
+#rm basic-install.sh
 
 border 'Rebooting System'
 sleep 1
