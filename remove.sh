@@ -17,7 +17,7 @@ border 'Removing Linux Audio Tuning'
 
 #rm basic-install.sh
 
-border 'Rebooting System'
-sleep 1
+border 'Cleaning Up & Rebooting System'
+sleep 3
 rm remove.sh
 reboot
