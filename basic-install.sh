@@ -33,7 +33,7 @@ sleep 1
 wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/master/sound.service -O /etc/systemd/system/sound.service
 systemctl enable sound.service
 
-border 'Cleaning Up & Rebooting System Enjoy the Music'
+border 'Cleaning Up'
 sleep 3
 rm basic-install.sh
 border 'Rebooting System Enjoy the Music'
