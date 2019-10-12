@@ -39,7 +39,7 @@ systemctl enable sound.service
 
 border 'Installing Spotify Client'
 sleep 1
-wget https://github.com/Spotifyd/spotifyd/releases/download/v0.2.16/spotifyd-2019-09-26-armv6-slim.zip
+wget https://github.com/Spotifyd/spotifyd/releases/download/v0.2.16/spotifyd-2019-10-06-armv6-slim.zip
 7z x spoti*
 mv spotifyd /usr/bin/spotifyd
 cd /usr/bin && ./spotifyd
