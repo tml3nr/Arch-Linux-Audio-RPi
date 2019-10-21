@@ -37,21 +37,21 @@ sleep 1
 wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/sound.service -O /etc/systemd/system/sound.service
 systemctl enable sound.service
 
-border 'Installing Spotify Client'
-sleep 1
-wget https://github.com/Spotifyd/spotifyd/releases/download/v0.2.19/spotifyd-2019-10-06-armv6-slim.zip
-7z x spoti*
-mv spotifyd /usr/bin/spotifyd
-cd /usr/bin && ./spotifyd
-wget https://github.com/Spotifyd/spotifyd/raw/master/contrib/spotifyd.service -O /etc/systemd/system/spotifyd.service
-mkdir ~/.config/
-cd ~/.config && mkdir spotifyd && cd
-wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/spotifyd.conf -O ~/.config/spotifyd/spotifyd.conf
-systemctl start spotifyd.service
-systemctl enable spotifyd.service
+#border 'Installing Spotify Client'
+#sleep 1
+#wget https://github.com/Spotifyd/spotifyd/releases/download/v0.2.19/spotifyd-2019-10-06-armv6-slim.zip
+#7z x spoti*
+#mv spotifyd /usr/bin/spotifyd
+#cd /usr/bin && ./spotifyd
+#wget https://github.com/Spotifyd/spotifyd/raw/master/contrib/spotifyd.service -O /etc/systemd/system/spotifyd.service
+#mkdir ~/.config/
+#cd ~/.config && mkdir spotifyd && cd
+#wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/spotifyd.conf -O ~/.config/spotifyd/spotifyd.conf
+#systemctl start spotifyd.service
+#systemctl enable spotifyd.service
 
 border 'Installation Finished'
-border 'Please update spotifyd.conf with your credentials and reboot'
+#border 'Please update spotifyd.conf with your credentials and reboot'
 sleep1
 exit 0
 
