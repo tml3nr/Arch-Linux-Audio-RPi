@@ -27,7 +27,7 @@ wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/archphi
 chmod 755 /etc/sysctl.d/archphile-network.conf
 
 border 'Installation Finished'
-sleep1
+sleep 1
 
 border 'Cleaning Up & Rebooting System Enjoy the Music'
 sleep 3
