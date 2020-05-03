@@ -1,4 +1,4 @@
-# Arch Linux-Audio Sound Tweaks
+# Archphile Linux-Audio Sound Tweaks
 Arch Linux Based RPi tweaks for improved sound. 
 - For TinyCore Linux based systems see [TinyCore Sound Tweaks](https://github.com/dynobot/TinyCore-Sound-Adjustments)
 - For Debian Linux base systems see [Debian Sound Tweaks](https://github.com/dynobot/Linux-Audio-Adjustments)
@@ -20,16 +20,6 @@ Arch Linux Based RPi tweaks for improved sound.
 - Raspberry Pi 2 model B
 - Raspberry Pi 3 model B and B+
 
-## Spotify Connect Install - Ropieee Only
-### Prerequisites 
- 1) The ability to use nano text editor - see nano documentation for details.
- 2) 7zip must be installed first: `pacman -S p7zip`
-
-Once the install finishes update spotifyd.conf file with your Spotify credentials, then reboot.
-
-`cd ~/.config/spotifyd` then `nano spotifyd.config`
-
-*detailed instructions here* : [Instructions](https://sites.google.com/view/dynobotscomputeraudio/do-it-yourself/update-spotifyd-conf)
 
  ______________________________________________________________________________________________________________________________
  ## Automated Install
