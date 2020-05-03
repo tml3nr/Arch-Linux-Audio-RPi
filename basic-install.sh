@@ -11,7 +11,7 @@ border()
 border 'Downloading Sound File'
 sleep 1
 [[ -f /usr/bin/archphile-optimize ]] && mv /usr/bin/archphile-optimize /usr/bin/archphile-optimize.bak
-wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/archphile-optimize -O /usr/bin/archphile-optimize
+wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/archphile-optimize -O /usr/bin/archphile-optimize
 chmod 755 /usr/bin/archphile-optimize
 
 border 'Increasing Sound Group Priority'
@@ -23,12 +23,9 @@ echo '@audio - memlock 512000' >> /etc/security/limits.conf
 
 border 'Improving Network Latency'
 sleep 1
-[[ -f /etc/sysctl.d/archphile-network.conf ]] && /etc/sysctl.d/archphile-network.conf /etc/sysctl.d/archphile-network.conf.bak
-echo "#New Network Latency" > /etc/sysctl.d/archphile-network.conf
-echo 'net.core.rmem_max = 16777216' >> /etc/sysctl.d/archphile-network.conf
-echo 'net.core.wmem_max = 16777216' >> /etc/sysctl.d/archphile-network.conf
-echo 'net.ipv4.tcp_rmem= 4096 87380 16777216' >> /etc/sysctl.d/archphile-network.conf
-echo 'net.ipv4.tcp_wmem= 4096 87380 16777216' >> /etc/sysctl.d/archphile-network.conf
+[[ -f /etc/sysctl.d/archphile-network.con ]] && mv /etc/sysctl.d/archphile-network.conf /etc/sysctl.d/archphile-network.conf.bak
+wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/archphile-network.conf -O /etc/sysctl.d/archphile-network.conf
+chmod 755 /etc/sysctl.d/archphile-network.conf
 
 border 'Installation Finished'
 border 'Please update spotifyd.conf with your credentials and reboot'
