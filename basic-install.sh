@@ -10,8 +10,9 @@ border()
 
 border 'Downloading Sound File'
 sleep 1
-wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/Sound.sh -O /usr/bin/Sound.sh
-chmod 755 /usr/bin/Sound.sh
+mv /usr/bin/archphile-optimize /usr/bin/archphile-optimize.bak
+wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/archphile-optimize -O /usr/bin/archphile-optimize
+chmod 755 /usr/bin/archphile-optimize
 
 border 'Increasing Sound Group Priority'
 sleep 1
