@@ -23,14 +23,14 @@ Arch Linux Based RPi tweaks for improved sound.
 
  ______________________________________________________________________________________________________________________________
  ## Automated Install
- `wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/basic-install.sh`
+ `wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/basic-install.sh`
  
  `chmod 755 basic-install.sh`
  
  `./basic-install.sh`
  
  ## Automated Removal
- `wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/beta/remove.sh`
+ `wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/remove.sh`
  
  `chmod 755 remove.sh`
  
