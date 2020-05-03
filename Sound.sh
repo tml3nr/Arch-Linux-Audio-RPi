@@ -16,7 +16,7 @@ chrt -f -p 54 $(pgrep ksoftirqd/3)
 
 #Tuning Kernel I/O schedulers
 echo bfq > /sys/block/mmcblk0/queue/scheduler
-echo 32 > /sys/block/mmcblk0/queue/iosched/fifo_batch
+echo 1 > /sys/block/mmcblk0/queue/iosched/low_latency
 
 #Reduce operating system latency
 echo 1000000 > /proc/sys/kernel/sched_latency_ns
