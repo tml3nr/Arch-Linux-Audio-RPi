@@ -28,12 +28,12 @@ wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/archphi
 chmod 755 /etc/sysctl.d/archphile-network.conf
 
 border 'Installation Finished'
-border 'Please update spotifyd.conf with your credentials and reboot'
 sleep1
-exit 0
+
 
 border 'Cleaning Up & Rebooting System Enjoy the Music'
 sleep 3
 rm basic-install.sh
 
-#reboot
+reboot
+exit 0
