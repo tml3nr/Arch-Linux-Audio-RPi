@@ -17,9 +17,8 @@ chmod 755 /usr/bin/archphile-optimize
 border 'Increasing Sound Group Priority'
 sleep 1
 [[ -f /etc/security/limits.conf ]] && mv /etc/security/limits.conf /etc/security/limits.conf.bak
-echo '#New Limits' > /etc/security/limits.conf
-echo '@audio - rtprio 99' >> /etc/security/limits.conf
-echo '@audio - memlock 512000' >> /etc/security/limits.conf
+wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/limits.conf -O /etc/security/limits.conf
+chmod 755 /etc/security/limits.conf
 
 border 'Improving Network Latency'
 sleep 1
@@ -29,7 +28,6 @@ chmod 755 /etc/sysctl.d/archphile-network.conf
 
 border 'Installation Finished'
 sleep1
-
 
 border 'Cleaning Up & Rebooting System Enjoy the Music'
 sleep 3
