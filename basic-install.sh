@@ -26,6 +26,11 @@ sleep 1
 wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/archphile-network.conf -O /etc/sysctl.d/archphile-network.conf
 chmod 755 /etc/sysctl.d/archphile-network.conf
 
+border 'Improveing Kernel Latency'
+sleep 1
+wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/60-mmc-scheduler.rules  -O /etc/udev/rules.d/60-mmc-scheduler.rules 
+chmod 755 /etc/udev/rules.d/60-mmc-scheduler.rules
+
 border 'Installation Finished'
 sleep 1
 
