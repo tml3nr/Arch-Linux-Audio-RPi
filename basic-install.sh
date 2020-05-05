@@ -10,7 +10,7 @@ border()
 
 border 'Downloading Sound File'
 sleep 1
-[[ -f /usr/bin/archphile-optimize ]] && mv /usr/bin/archphile-optimize /usr/bin/archphile-optimize.bak
+[[ -f /usr/bin/archphile-optimize ]] && mv /usr/bin/archphile-optimize /usr/bin/backup-archphile-optimize.bak
 wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/archphile-optimize -O /usr/bin/archphile-optimize
 chmod 755 /usr/bin/archphile-optimize
 
