@@ -44,10 +44,6 @@ chmod 755 /etc/systemd/system/archphile.service
 border 'Installation Finished'
 sleep 1
 
-#border 'Restarting Archphile Service'
-#sleep 1
-#systemctl start archphile.sevice
-
 border 'Cleaning Up & Rebooting System Enjoy the Music'
 sleep 3
 rm basic-install.sh
