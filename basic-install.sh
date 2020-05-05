@@ -46,7 +46,7 @@ sleep 1
 
 border 'Restarting Archphile Service'
 sleep 1
-systemctl restart archphile.sevice
+systemctl start archphile.sevice
 
 border 'Cleaning Up & Rebooting System Enjoy the Music'
 sleep 3
