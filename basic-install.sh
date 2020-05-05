@@ -8,6 +8,10 @@ border()
     sleep 3
 }
 
+border 'Stopping current Archphile Service'
+sleep 1
+systemctl stop archphile.service
+
 border 'Downloading Sound File'
 sleep 1
 [[ -f /usr/bin/archphile-optimize ]] && mv /usr/bin/archphile-optimize /usr/bin/backup-archphile-optimize.bak
@@ -33,6 +37,10 @@ chmod 755 /etc/udev/rules.d/60-mmc-scheduler.rules
 
 border 'Installation Finished'
 sleep 1
+
+border 'Restarting Archphile Service'
+sleep 1
+systemctl restart archphile.sevice
 
 border 'Cleaning Up & Rebooting System Enjoy the Music'
 sleep 3
