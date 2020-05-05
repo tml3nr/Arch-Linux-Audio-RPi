@@ -26,7 +26,7 @@ chmod 755 /etc/security/limits.conf
 
 border 'Improving Network Latency'
 sleep 1
-[[ -f /etc/sysctl.d/archphile-network.con ]] && mv /etc/sysctl.d/archphile-network.conf /etc/sysctl.d/archphile-network.conf.bak
+[[ -f /etc/sysctl.d/archphile-network.conf ]] && mv /etc/sysctl.d/archphile-network.conf /etc/sysctl.d/archphile-network.conf.bak
 wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/archphile-network.conf -O /etc/sysctl.d/archphile-network.conf
 chmod 755 /etc/sysctl.d/archphile-network.conf
 
@@ -34,6 +34,12 @@ border 'Improveing Kernel Latency'
 sleep 1
 wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/60-mmc-scheduler.rules  -O /etc/udev/rules.d/60-mmc-scheduler.rules 
 chmod 755 /etc/udev/rules.d/60-mmc-scheduler.rules
+
+border 'Updating Archphile Service'
+sleep 1
+[[ -f /etc/systemd/system/archphile.service ]] && mv /etc/systemd/system/archphile.service /etc/systemd/system/backup-archphile.service.bak
+wget https://github.com/dynobot/Arch-Linux-Audio-RPi/raw/archphile-alpha/archphile.service -O /etc/systemd/system/archphile.service
+chmod 755 /etc/systemd/system/archphile.service
 
 border 'Installation Finished'
 sleep 1
