@@ -4,16 +4,21 @@
 #
 /usr/bin/unmute
 
+# please replace x with the id of your device if you encounter issues with usb pops/clicks
+#echo -n "x-x.x:x.x" > /sys/bus/usb/drivers/usbhid/unbind
 
 # this command sets deadline scheduler during boot
 #
 # note that mq-deadline is currently the default scheduler
 #
-#echo bfq > /sys/block/mmcblk0/queue/scheduler
+#echo mq-deadline > /sys/block/mmcblk0/queue/scheduler
 
 # Tuning I/O scheduler
 echo 1 > /sys/block/mmcblk0/queue/iosched/low_latency
 
+# this command sets ondemand cpu governor
+#
+#echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor >/dev/null
 
 # this command sets swappiness to 0
 #
@@ -30,6 +35,11 @@ echo 25000 > /proc/sys/kernel/sched_wakeup_granularity_ns
 # Disable HDMI for RPI
 /opt/vc/bin/tvservice -off
 
+# set various processes to be run on specific cores
+sleep 5
+taskset -c -a -p 1 $(pidof mpd)
+#taskset -c -a -p 1 $(pidof squeezelite)
+
 #Reduce Audio thread latency
 chrt -f -p 54 $(pgrep ksoftirqd/0)
 chrt -f -p 54 $(pgrep ksoftirqd/1)
@@ -40,9 +50,9 @@ chrt -f -p 54 $(pgrep ksoftirqd/3)
 #/sbin/ethtool -s eth0 speed 100 duplex full autoneg on
 
 # wireless connection tweaks
-iw reg set US
-
-#Restart Squeezelite in case Roon does not see Squeezelite on first boot
-#sleep 15
-#systemctl restart squeezelite
+#
+#iwconfig wlan0 power off
+#iwconfig wlan0 frag 2346
+#iwconfig wlan0 rts 2347
+#iw reg set GR
 
