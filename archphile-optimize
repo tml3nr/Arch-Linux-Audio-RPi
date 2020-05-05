@@ -9,7 +9,7 @@
 #
 # note that mq-deadline is currently the default scheduler
 #
-echo bfq > /sys/block/mmcblk0/queue/scheduler
+#echo bfq > /sys/block/mmcblk0/queue/scheduler
 
 # Tuning I/O scheduler
 echo 1 > /sys/block/mmcblk0/queue/iosched/low_latency
