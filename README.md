@@ -39,4 +39,10 @@ Arch Linux Based RPi tweaks for improved sound.
  ____________________________________________________________________________________________________________________________
 
 
-
+<html>
+  <body>
+    <button id="copy-button" data-clipboard-text="Copy Me!" title="Click to copy me.">Copy to Clipboard</button>
+    <script src="ZeroClipboard.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
