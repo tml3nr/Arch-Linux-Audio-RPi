@@ -1,4 +1,8 @@
-![](https://github.com/dynobot/Arch-Linux-Audio-RPi/blob/archphile-alpha/images/dbaudio.png)
+
+<p align="center">
+  <img width="250" height="250" src="https://github.com/dynobot/Arch-Linux-Audio-RPi/blob/archphile-alpha/images/dbaudio.png">
+</p>
+
 # Archphile Linux-Audio Sound Tweaks
 Arch Linux Based RPi tweaks for improved sound. 
 - For TinyCore Linux based systems see [TinyCore Sound Tweaks](https://github.com/dynobot/TinyCore-Sound-Adjustments)
