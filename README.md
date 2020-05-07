@@ -21,8 +21,14 @@ Arch Linux Based RPi tweaks for improved sound.
  
  ### Post Install
  1) If you are using and have configured Wifi before you installed this tweak you will need to go back into the archphile-optimize file and update your country code.
+`nano /usr/bin/archphile-optimize` 
+`iw reg set US`
+
  2) By default Archphile creates cpu affinity to MPD and/or Squeezelite. This creates an unnecessary bottle neck, forcing the audio program to use only one core. This is not necessary as the audio program is the only program working. Commenting this section out in the archphile-optimze will allow your audio software to have full access to all cores and provide a more stable output under extreme loads.
- 
+`nano /usr/bin/archphile-optimize` 
+#taskset -c -a -p 1 $(pidof mpd)
+#taskset -c -a -p 1 $(pidof squeezelite)
+
 **Should work on any SBC running Arch Linux based OS, has been tested on:**
 
 - Raspberry Pi (v1) model B
