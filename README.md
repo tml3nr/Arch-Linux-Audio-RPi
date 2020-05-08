@@ -26,7 +26,7 @@ Arch Linux Based RPi tweaks for improved sound.
 
 iw reg set US
 
- 2) By default Archphile creates cpu affinity for MPD and/or Squeezelite. This creates an unnecessary bottle neck imo, forcing the audio program to use only one core. This is not necessary as the audio program is the only program running. Commenting this section out in the archphile-optimze file will give your audio software full access to all cores and provide a more stable output under various loads.
+ 2) By default Archphile creates cpu affinity for MPD and/or Squeezelite. This creates an unnecessary bottle-neck imo, forcing the audio program to use only one core. This is not necessary as the audio program is the only program running. Commenting this section out in the archphile-optimze file will give your audio software full access to all cores and provide a more stable output under various loads.
  
 `nano /usr/bin/archphile-optimize` 
 
